@@ -36,18 +36,7 @@ class Program
         
         //Linux
 
-        String devDirectoryPath = "/dev/serial/by-id/";
-        if(Directory.Exists(devDirectoryPath))
-        {
-            var files = Directory.GetFiles(devDirectoryPath);
-            foreach(var f in files)
-            {
-                if(f.Contains(searchFor))
-                {
-                    var found = true;
-                }
-            }
-        }
+        
 
         String portName = Chetch.Utilities.SerialPortDevice.GetPortNameForDevice(searchFor, searchKey);
 
