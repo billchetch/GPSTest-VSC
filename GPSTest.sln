@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSTest", "GPSTest\GPSTest.csproj", "{A643ECB7-C919-483D-B404-F2D3B8D8915A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS", "..\..\Libraries\GPS\GPS\GPS.csproj", "{2745486F-9499-4B02-B9E4-50AF464AD13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\..\Libraries\Utilities\Utilities\Utilities.csproj", "{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A643ECB7-C919-483D-B404-F2D3B8D8915A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A643ECB7-C919-483D-B404-F2D3B8D8915A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A643ECB7-C919-483D-B404-F2D3B8D8915A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A643ECB7-C919-483D-B404-F2D3B8D8915A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2745486F-9499-4B02-B9E4-50AF464AD13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2745486F-9499-4B02-B9E4-50AF464AD13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2745486F-9499-4B02-B9E4-50AF464AD13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2745486F-9499-4B02-B9E4-50AF464AD13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
