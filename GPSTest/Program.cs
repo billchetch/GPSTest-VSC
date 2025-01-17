@@ -29,8 +29,9 @@ class Program
         }
         else
         {
-            searchFor = "usb-u-blox"; //Full path: usb-u-blox_AG_-_www.u-blox.com_u-blox_7_-_GPS_GNSS_Receiver-if00 
-            //searchKey = "USB Product Name";
+            //searchFor = "usb-u-blox"; //Full name: usb-u-blox_AG_-_www.u-blox.com_u-blox_7_-_GPS_GNSS_Receiver-if00 
+            //searchFor = "usb-Arduino"; //Full name: usb-Arduino__www.arduino.cc__0043_55936343034351B0A061-if00
+            searchFor = "usb-1a86_USB_Serial"; //Full name (generic arduino nano): usb-1a86_USB_Serial-if00-port0
         }
         //MacOS
         
