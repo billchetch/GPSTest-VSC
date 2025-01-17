@@ -19,11 +19,36 @@ class Program
         Console.WriteLine( "   Platform: {0,-15} Version: {1}",
             Environment.OSVersion.Platform, Environment.OSVersion.Version );
 
-        //String searchFor = "Arduino";
-        //String searchKey =  "USB Vendor Name";
+        String searchFor;
+        String searchKey = String.Empty;
         
-        String searchFor = "u-blox 7 - GPS/GNSS Receiver";
-        String searchKey = "USB Product Name";
+        if(OperatingSystem.IsMacOS())
+        {
+            searchFor = "u-blox 7 - GPS/GNSS Receiver";
+            searchKey = "USB Product Name";
+        }
+        else
+        {
+            searchFor = "usb-u-blox"; //Full path: usb-u-blox_AG_-_www.u-blox.com_u-blox_7_-_GPS_GNSS_Receiver-if00 
+            //searchKey = "USB Product Name";
+        }
+        //MacOS
+        
+        //Linux
+
+        String devDirectoryPath = "/dev/serial/by-id/";
+        if(Directory.Exists(devDirectoryPath))
+        {
+            var files = Directory.GetFiles(devDirectoryPath);
+            foreach(var f in files)
+            {
+                if(f.Contains(searchFor))
+                {
+                    var found = true;
+                }
+            }
+        }
+
         String portName = Chetch.Utilities.SerialPortDevice.GetPortNameForDevice(searchFor, searchKey);
 
         //String portName = "/dev/cu.usbmodem1401"; //apple
