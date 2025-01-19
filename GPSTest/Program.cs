@@ -7,6 +7,9 @@ using Chetch.Messaging;
 using Chetch.Utilities;
 using System.Runtime.CompilerServices;
 using System.CodeDom.Compiler;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Chetch.Database;
 
 
 namespace GPSTest;
@@ -21,11 +24,24 @@ class Program
         Console.WriteLine( "   Platform: {0,-15} Version: {1}",
             Environment.OSVersion.Platform, Environment.OSVersion.Version );
         
-        GPSManager gPSManager = new GPSManager();
+
+        var configBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.local.json", false);
+        var config = configBuilder.Build();
+
+        ChetchDbContext.Config = config;
+
+        using(var context = new SysLogDBContext("gps"))
+        {
+            foreach(var si in context.SysInfoTable){
+                Console.WriteLine(si.DataName);
+            }
+        }
+
+        /*GPSManager gPSManager = new GPSManager();
         gPSManager.StartRecording();
 
         ConsoleHelper.PK("Press a key to end");
 
-        gPSManager.StopRecording();
+        gPSManager.StopRecording();*/
     }
 }

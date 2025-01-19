@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPS", "..\..\Libraries\GPS\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\..\Libraries\Utilities\Utilities\Utilities.csproj", "{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\..\Libraries\Database\Database\Database.csproj", "{B6017670-3083-421F-8674-37046DFAD66A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F99C4FF-E7D9-4D36-955B-52C45E3AF339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6017670-3083-421F-8674-37046DFAD66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6017670-3083-421F-8674-37046DFAD66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6017670-3083-421F-8674-37046DFAD66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6017670-3083-421F-8674-37046DFAD66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
