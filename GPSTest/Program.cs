@@ -30,18 +30,11 @@ class Program
 
         ChetchDbContext.Config = config;
 
-        using(var context = new SysLogDBContext("gps"))
-        {
-            foreach(var si in context.SysInfoTable){
-                Console.WriteLine(si.DataName);
-            }
-        }
-
-        /*GPSManager gPSManager = new GPSManager();
+        GPSManager gPSManager = new GPSManager();
         gPSManager.StartRecording();
 
         ConsoleHelper.PK("Press a key to end");
 
-        gPSManager.StopRecording();*/
+        gPSManager.StopRecording();
     }
 }
