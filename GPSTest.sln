@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\..\Librarie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\..\Libraries\Database\Database\Database.csproj", "{B6017670-3083-421F-8674-37046DFAD66A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChetchXMPP", "..\..\Libraries\ChetchXMPP\ChetchXMPP\ChetchXMPP.csproj", "{0626F833-0C8F-4818-B390-AEADF8708C95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{B6017670-3083-421F-8674-37046DFAD66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6017670-3083-421F-8674-37046DFAD66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6017670-3083-421F-8674-37046DFAD66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0626F833-0C8F-4818-B390-AEADF8708C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0626F833-0C8F-4818-B390-AEADF8708C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0626F833-0C8F-4818-B390-AEADF8708C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0626F833-0C8F-4818-B390-AEADF8708C95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -17,24 +17,15 @@ namespace GPSTest;
 class Program
 {
     
-
     static void Main(string[] args)
     {
-        
-        Console.WriteLine( "   Platform: {0,-15} Version: {1}",
-            Environment.OSVersion.Platform, Environment.OSVersion.Version );
-        
+        //GPSManager gPSManager = new GPSManager();
+        //gPSManager.StartRecording();
 
-        var configBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.local.json", false);
-        var config = configBuilder.Build();
+        ConsoleHelper.PK("Press a key to start service");
+        GPSService.Run(args);
+        ConsoleHelper.PK("Press a key to end service");
 
-        ChetchDbContext.Config = config;
-
-        GPSManager gPSManager = new GPSManager();
-        gPSManager.StartRecording();
-
-        ConsoleHelper.PK("Press a key to end");
-
-        gPSManager.StopRecording();
+        //gPSManager.StopRecording();
     }
 }
