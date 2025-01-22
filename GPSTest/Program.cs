@@ -23,7 +23,7 @@ class Program
         //gPSManager.StartRecording();
 
         ConsoleHelper.PK("Press a key to start service");
-        GPSService.Run(args);
+        //GPSService.Run(args);
         ConsoleHelper.PK("Press a key to end service");
 
         //gPSManager.StopRecording();

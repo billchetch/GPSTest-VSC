@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-<ItemGroup>
+  <ItemGroup>
     <Content Include="appsettings.*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
